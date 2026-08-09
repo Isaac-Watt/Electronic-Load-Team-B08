@@ -1,0 +1,39 @@
+# ---- PlatformIO ----
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# ---- Editors ----
+.vscode/
+.idea/
+*.swp
+
+# ---- KiCad ----
+*-backups/
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+_autosave-*
+fp-info-cache
+
+# ---- LTspice ----
+*.raw
+*.op.raw
+*.log
+*.net
+
+# ---- Build output ----
+*.bin
+*.elf
+*.hex
+*.map
+
+# ---- Python ----
+__pycache__/
+*.pyc
+.venv/
+
+# ---- OS junk ----
+.DS_Store
+Thumbs.db
+desktop.ini

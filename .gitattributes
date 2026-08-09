@@ -1,0 +1,26 @@
+# Normalise line endings inside the repository regardless of each
+# developer's local git config. Protects the mixed Linux/Windows team.
+* text=auto
+
+# Files that genuinely break with CRLF endings
+*.sh   text eol=lf
+*.py   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+
+# KiCad sources diff more cleanly with consistent endings
+*.kicad_pcb text eol=lf
+*.kicad_sch text eol=lf
+*.kicad_pro text eol=lf
+
+# Never line-ending-convert or text-diff these
+*.bin  binary
+*.elf  binary
+*.hex  binary
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.zip  binary
+*.step binary
+*.stp  binary
